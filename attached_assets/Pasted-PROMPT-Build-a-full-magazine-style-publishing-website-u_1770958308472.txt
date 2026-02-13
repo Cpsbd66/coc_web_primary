@@ -1,0 +1,209 @@
+PROMPT:
+
+Build a full magazine-style publishing website using React + Vite + React Router + Reactstrap (Bootstrap 5). Do not use Tailwind. Use Bootstrap grid and components for layout and styling.
+
+This is a publishing hub where users can read articles and admins can upload articles.
+
+Tech Stack
+
+React + Vite
+
+React Router
+
+Reactstrap + Bootstrap
+
+Plain CSS only where needed
+
+Local mock data (no backend yet, but structured so backend can be added later)
+
+Pages Required
+Public Pages
+
+Home page
+
+Category page (filter by category)
+
+Article page (full reading view)
+
+Admin Pages
+
+Admin dashboard page
+
+Admin article upload page
+
+Admin article edit/delete support
+
+Layout Requirements
+
+Full-width light navbar
+
+Centered content container (max-width ~1200px)
+
+Dark or soft gradient page background
+
+Responsive layout
+
+Bootstrap grid system
+
+Two-column desktop layout:
+
+Left: articles grid
+
+Right: sidebar events panel
+
+Sidebar stacks below content on mobile
+
+Components Required
+
+Navbar (Reactstrap Navbar)
+
+Footer
+
+ArticleCard (Card component)
+
+SidebarEvents (Card + ListGroup)
+
+CategoryFilterBar
+
+HeroHeader section
+
+AdminArticleForm
+
+AdminArticleTable
+
+Routing
+/ → Home
+/category/:name → Category page
+/article/:slug → Article page
+
+/admin → Admin dashboard
+/admin/new → New article form
+/admin/edit/:id → Edit article
+
+Data Structure
+
+Create a local data file:
+
+articles.js
+
+Each article contains:
+
+id
+title
+slug
+description
+author
+category
+date
+coverImage
+content
+
+Home Page Structure
+
+Hero banner with big magazine-style title
+
+Category filter buttons
+
+Grid of ArticleCards (Bootstrap Row + Col)
+
+SidebarEvents on the right
+
+Category Page
+
+Title showing selected category
+
+Filtered articles grid
+
+Sidebar visible
+
+Article Page
+
+Large title
+
+Author + date line
+
+Cover image
+
+Long-form article content
+
+Reading-width container (~700–800px)
+
+Good typography and spacing
+
+Admin Dashboard
+
+Admin page should include:
+
+Table of all articles
+
+Edit button
+
+Delete button
+
+“Add New Article” button
+
+Use Reactstrap Table + Buttons.
+
+Admin Upload Form
+
+Fields:
+
+Title
+
+Slug
+
+Category (dropdown)
+
+Author
+
+Description
+
+Cover image URL
+
+Content (textarea)
+
+Behavior:
+
+On submit → add to article list state
+
+Edit mode → prefill form
+
+Validation required
+
+Use Reactstrap Form components
+
+Styling Rules
+
+Use Bootstrap spacing utilities
+
+Use Cards for article previews
+
+Hover lift effect on cards
+
+Clean typography
+
+No Tailwind
+
+No inline styles except small tweaks
+
+Fully responsive
+
+Deliverables
+
+Provide:
+
+Full folder structure
+
+All component files
+
+Page files
+
+Router setup
+
+Reactstrap usage
+
+Example article data
+
+Working starter code
+
+No TODO placeholders
