@@ -42,7 +42,7 @@ export function Navbar() {
             Home
           </Link>
           
-          {categories.slice(0, 4).map((cat) => (
+          {categories.map((cat) => (
             <Link 
               key={cat.id} 
               href={`/category/${cat.slug}`} 
